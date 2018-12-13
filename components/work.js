@@ -1,12 +1,15 @@
 import Link from "next/link"
 
-const Work = () => (
+const Work = (props) => (
   <div>
-    <img src="https://source.unsplash.com/random/960x300" alt="Unified snapshot" />
+    <img src={props.photo} alt="Unified snapshot" />
     <Link href="/unified">
-      <a>Unified</a>
+      <a>{props.company}</a>
     </Link>
     <style jsx>{`
+      div {
+        margin-top: 3em;
+      }
       img {
         max-width: 100%;
       }
