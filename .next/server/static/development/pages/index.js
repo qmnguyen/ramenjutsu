@@ -109,46 +109,35 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/quannguyen/Documents/ramenjutsu/components/header.js";
 
 
-var linkStyle = {
-  marginRight: 20
+var logoStyle = {
+  marginRight: 20,
+  maxWidth: 50
 };
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    style: logoStyle,
+    src: "/static/q-dot-logo.png",
+    alt: "q logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    style: linkStyle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, "About")));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -171,9 +160,9 @@ var _jsxFileName = "/Users/quannguyen/Documents/ramenjutsu/components/layout.js"
 
 
 var layoutStyle = {
+  background: "#DDBD85",
   margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
+  padding: 20
 };
 
 var Layout = function Layout(props) {
@@ -220,13 +209,33 @@ var Index = function Index() {
       lineNumber: 4
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: this
-  }, "Hello Next.js"));
+  }, "the playfolio of a designer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "This a place anchored in the internet for me to show some stuff I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://dribbble.com/ramenjutsu",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "Dribbble"), " or we can chat on ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://twitter.com/ramenjutsu",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "Twitter"), "."));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);

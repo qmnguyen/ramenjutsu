@@ -1,16 +1,14 @@
 import Link from 'next/link'
 
-const linkStyle = {
-  marginRight: 20
+const logoStyle = {
+  marginRight: 20,
+  maxWidth: 50
 }
 
 const Header = () => (
   <div>
     <Link href="/">
-      <a style={linkStyle}>Home</a>
-    </Link>
-    <Link href="/about">
-      <a style={linkStyle}>About</a>
+      <img style={ logoStyle } src="/static/q-dot-logo.png" alt="q logo" />
     </Link>
   </div>
 )
