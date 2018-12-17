@@ -2,12 +2,14 @@ import Link from "next/link"
 
 const Work = (props) => (
   <div>
-    <img src={props.photo} alt="Unified snapshot" />
-    <Link href="/unified">
-      <a>{props.company}</a>
+    <Link href={props.pageUrl}>
+      <a>
+        <img src={props.photo} alt={`${props.company} snapshot`} />
+        {props.company}
+      </a>
     </Link>
     <style jsx>{`
-      div {
+      div {spi
         margin-top: 3em;
       }
       img {
