@@ -9,11 +9,16 @@ const Work = (props) => (
       </a>
     </Link>
     <style jsx>{`
-      div {spi
+      div {
         margin-top: 3em;
       }
       img {
         max-width: 100%;
+      }
+      a {
+        color: #F25652;
+        font-weight: bold;
+        text-decoration: none;
       }
     `}</style>
   </div>

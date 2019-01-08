@@ -6,7 +6,7 @@ const Layout = (props) => (
     <Head>
       <title>quan</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="It's a playfolio!" />
+      <meta name="description" content="It's a playfolio from Quan Nguyen, a ramen-obsessed, watch-addicted, craft beer-sipping, NYC-based, web designer!" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dokdo|IBM+Plex+Mono:200,400,400i,700" />
     </Head>
     <Header />
@@ -14,7 +14,7 @@ const Layout = (props) => (
     <style jsx global>{`
       body {
         background: #DDBD85;
-        color: #F1F0E2;;
+        color: #F1F0E2;
         font-size: 20px;
         font-family: 'IBM Plex Mono', monospace;
         line-height: 1.4;
