@@ -7,8 +7,10 @@ const Fisci = () => (
     <p className="blurb">This was the start of my professional digital career designing enterprise software. Wrestling with large tables stuffed with financial datasets was a regular day. Also, redesigning the company website and maintaining it became a thing.</p>
     <style jsx>{`
       h1 {
+        font-family: 'Raleway', sans-serif;
+        line-height: 1;
         margin-top: 55px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
       .tenure {
         margin-top: 2px;

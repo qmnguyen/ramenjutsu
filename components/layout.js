@@ -7,7 +7,7 @@ const Layout = (props) => (
       <title>quan</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content="It's a playfolio from Quan Nguyen, a ramen-obsessed, watch-addicted, craft beer-sipping, NYC-based, web designer!" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dokdo|IBM+Plex+Mono:200,400,400i,700" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,400,800|IBM+Plex+Mono:200,400,400i,700" />
     </Head>
     <Header />
     {props.children}

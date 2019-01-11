@@ -4,28 +4,41 @@ import Work from '../components/work'
 const Index = () => (
   <Layout>
     <h1>the playfolio of a designer</h1>
-    <p className="intro">This a place anchored in the internet for me to show some stuff I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my <a href="https://dribbble.com/ramenjutsu">Dribbble</a> or we can chat on <a href="https://twitter.com/ramenjutsu">Twitter</a>.</p>
-    {/* <Work
+    <p className="intro">This is a place anchored in the internet for me to show some stuff; things I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my <a href="https://dribbble.com/ramenjutsu">Dribbble</a> or we can chat on <a href="https://twitter.com/ramenjutsu">Twitter</a>.</p>
+    <Work
       company="Unified"
       pageUrl="/unified"
-      photo="https://source.unsplash.com/weekly?work"
+      photo="/static/unified-01.png"
     />
     <Work
       company="Financial Sciences"
       pageUrl="/financial-sciences"
-      photo="https://source.unsplash.com/weekly?finance"
-    /> */}
+      photo="/static/fisci-01.png"
+    />
     <style jsx>{`
       h1 {
-        font-size: 2.4em;
+        font-family: 'Raleway', sans-serif;
+        font-size: 4.8em;
+        font-weight: 800;
+        letter-spacing: 3px;
+        line-height: 1;
         margin-bottom: 0;
-        margin-top: 2em;
+        margin-top: 80px;
+        text-transform: uppercase;
+      }
+      @media(max-width: 430px) {
+        h1 {
+          font-size: 1.8em;
+        }
       }
       .intro {
-        max-width: 32em;
+        line-height: 1.5;
+        margin-bottom: 80px;
+        max-width: 38em;
       }
       .intro a {
         color: #F25652;
+        font-family: 'Raleway', sans-serif;
         font-weight: bold;
         text-decoration: none;
       }
