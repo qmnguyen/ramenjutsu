@@ -1,16 +1,16 @@
 # ramenjutsu
 
 ### Setup
-- `npm install --save next react react-dom`
+- Make sure to install React and Next.js `npm install --save next react react-dom`
 - `npm install`
 
-### _Setup static export_
+### _Setup static export(optional)_
 - `npm install -g serve`
 
 #### Run local
-- `npm run start`
+- `npm run dev`
 
-#### Run build/export(_optional to preview production_)
+#### Run build/export(_optional to preview production locally_)
 - `npm run build`
 - `npm run export`
 - `cd out`
