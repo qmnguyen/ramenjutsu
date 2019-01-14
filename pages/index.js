@@ -7,7 +7,7 @@ const Index = () => (
     <SideNav />
     <div className="main-section">
       <h1>the playfolio of a designer</h1>
-      <p className="intro">This is a place anchored in the internet for me to show some stuff; things I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my <a href="https://dribbble.com/ramenjutsu">Dribbble</a> or we can chat on <a href="https://twitter.com/ramenjutsu">Twitter</a>.</p>
+      <p className="intro">This is a place anchored in the internet for me to show some stuff; these are things I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my <a href="https://dribbble.com/ramenjutsu">Dribbble</a> or we can chat on <a href="https://twitter.com/ramenjutsu">Twitter</a>.</p>
     </div>
     {/* <Work
       company="Unified"

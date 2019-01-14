@@ -3,7 +3,7 @@ import SideNav from '../components/side-nav'
 
 const Unified = () => (
   <Layout>
-    <SideNav/>
+    <SideNav />
     <div className="exp-container">
       <h1>Unified</h1>
       <p className="tenure">2012–present</p>
@@ -28,6 +28,7 @@ const Unified = () => (
       }
       .blurb {
         line-height: 1.5;
+        max-width: 38em;
       }
     `}
     </style>

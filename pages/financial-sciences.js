@@ -3,7 +3,7 @@ import SideNav from '../components/side-nav'
 
 const Fisci = () => (
   <Layout>
-    <SideNav/>
+    <SideNav />
     <div className="exp-container">
       <h1>Financial Sciences</h1>
       <p className="tenure">2009–2012</p>
@@ -28,6 +28,7 @@ const Fisci = () => (
       }
       .blurb {
         line-height: 1.5;
+        max-width: 38em;
       }
     `}
     </style>
