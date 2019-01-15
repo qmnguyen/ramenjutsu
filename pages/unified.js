@@ -13,13 +13,13 @@ const Unified = () => (
       h1 {
         font-family: 'Raleway', sans-serif;
         line-height: 1;
-        margin-top: 55px;
+        margin-top: 0;
         margin-bottom: 10px;
       }
       .exp-container {
         background-color: #F1F0E2;
         align-self: stretch;
-        padding: 30px 60px 80px 100px;
+        padding: 80px 60px 80px 100px;
       }
       .tenure {
         color: #F25652;

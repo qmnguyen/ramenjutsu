@@ -25,6 +25,10 @@ const Layout = (props) => (
         font-weight: bold;
         text-decoration: none;
       }
+      ::selection {
+        background-color: #DDBD85;
+        color: #F1F0E2;
+      }
     `}</style>
     <style jsx>{`
       .container {
