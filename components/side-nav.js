@@ -6,21 +6,21 @@ const SideNav = (props) => (
     <Link href="/">
       <img src="/static/q-dot-logo.png" alt="q logo" />
     </Link>
-    <p className="nav-section-title">Work<span></span></p>
-    <Link href="/unified">
-      <a>Unified</a>
-    </Link>
-    <Link href="/financial-sciences">
-      <a>Financial Sciences</a>
-    </Link>
-    <p className="nav-section-title">Play<span></span></p>
+    <div></div>
+    <div className="nav-items">
+      <p className="nav-section-title">Work<span></span></p>
+      <Link href="/unified">
+        <a>Unified</a>
+      </Link>
+      <Link href="/financial-sciences">
+        <a>Financial Sciences</a>
+      </Link>
+      <p className="nav-section-title">Play<span></span></p>
+    </div>
     <style jsx>{`
       .sidenav-container {
         background-color: #F25652;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        min-width: 185px;
+        max-width: 105px;
         padding: 40px;
       }
       img {
@@ -29,6 +29,8 @@ const SideNav = (props) => (
       }
       a {
         color: #F1F0E2;
+        display: block;
+        line-height: 1.2;
         margin-bottom: 15px;
       }
       .nav-section-title {
