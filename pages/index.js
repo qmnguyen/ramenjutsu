@@ -1,11 +1,18 @@
 import Layout from '../components/layout'
+import SideNav from '../components/side-nav'
 import Work from '../components/work'
 
 const Index = () => (
   <Layout>
-    <h1>the playfolio of a designer</h1>
-    <p className="intro">This is a place anchored in the internet for me to show some stuff; things I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my <a href="https://dribbble.com/ramenjutsu">Dribbble</a> or we can chat on <a href="https://twitter.com/ramenjutsu">Twitter</a>.</p>
-    <Work
+    <SideNav />
+    <div className="main-section">
+      <h1>the<br/>
+      <span>playfolio</span><br/>
+      of a<br/>
+      designer</h1>
+      <p className="intro">This is a place anchored in the internet for me to show some stuff; these are things I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my <a href="https://dribbble.com/ramenjutsu">Dribbble</a> or we can chat on <a href="https://twitter.com/ramenjutsu">Twitter</a>.</p>
+    </div>
+    {/* <Work
       company="Unified"
       pageUrl="/unified"
       photo="/static/unified-01.png"
@@ -14,16 +21,16 @@ const Index = () => (
       company="Financial Sciences"
       pageUrl="/financial-sciences"
       photo="/static/fisci-01.png"
-    />
+    /> */}
     <style jsx>{`
       h1 {
         font-family: 'Raleway', sans-serif;
-        font-size: 4.8em;
+        font-size: 6em;
         font-weight: 800;
         letter-spacing: 3px;
-        line-height: 1;
-        margin-bottom: 0;
-        margin-top: 80px;
+        line-height: 0.8;
+        margin-bottom: 50px;
+        margin-top: 0;
         text-transform: uppercase;
       }
       @media(max-width: 430px) {
@@ -31,16 +38,20 @@ const Index = () => (
           font-size: 1.8em;
         }
       }
+      h1 span {
+        background-color: #F25652;
+        color: #F1F0E2;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+      }
       .intro {
         line-height: 1.5;
-        margin-bottom: 80px;
-        max-width: 38em;
+        max-width: 35em;
       }
-      .intro a {
-        color: #F25652;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        text-decoration: none;
+      .main-section {
+        background-color: #F1F0E2;
+        align-self: center;
+        padding: 20px 60px 0px 100px;
       }
     `}</style>
   </Layout>
