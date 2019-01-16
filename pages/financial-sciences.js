@@ -19,9 +19,10 @@ const Fisci = () => (
       .exp-container {
         background-color: #F1F0E2;
         align-self: stretch;
+        overflow: auto;
         padding: 80px 60px 80px 100px;
       }
-      @media(max-width: 430px) {
+      @media(max-width: 495px) {
         .exp-container { padding-left: 40px; }
       }
       .tenure {

@@ -33,7 +33,7 @@ const Index = () => (
         margin-top: 0;
         text-transform: uppercase;
       }
-      @media(max-width: 430px) {
+      @media(max-width: 950px) {
         h1 {
           font-size: 1.8em;
         }
@@ -51,10 +51,14 @@ const Index = () => (
       .main-section {
         background-color: #F1F0E2;
         align-self: center;
+        overflow: auto;
         padding: 20px 60px 0px 100px;
       }
-      @media(max-width: 430px) {
+      @media(max-width: 495px) {
         .main-section { padding-left: 40px; }
+      }
+      @media(max-height: 736px) {
+        .main-section { align-self: stretch; }
       }
     )
     `}</style>

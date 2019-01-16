@@ -17,14 +17,23 @@ const Layout = (props) => (
     </Head>
     {props.children}
     <style jsx global>{`
+      html {
+        height: 100%;
+        padding: 0;
+        width: 100%;
+      }
       body {
         background: #F1F0E2;
         color: #555555;
         font-size: 20px;
         font-family: 'IBM Plex Mono', monospace;
+        height: 100%;
         line-height: 1.4;
         margin: 0;
         padding: 0;
+      }
+      #__next {
+        height: 100%;
       }
       a {
         color: #F25652;
@@ -40,9 +49,8 @@ const Layout = (props) => (
     <style jsx>{`
       .container {
         display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        height: 100vh;
+        height: 100%;
+        min-height: 100%;
       }
     `}</style>
   </div>

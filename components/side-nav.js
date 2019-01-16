@@ -6,7 +6,6 @@ const SideNav = (props) => (
     <Link href="/">
       <img src="/static/q-dot-logo.png" alt="q logo" />
     </Link>
-    <div></div>
     <div className="nav-items">
       <p className="nav-section-title">Work<span></span></p>
       <Link href="/unified">
