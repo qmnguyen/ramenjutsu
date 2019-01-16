@@ -20,7 +20,7 @@ const SideNav = (props) => (
     <style jsx>{`
       .sidenav-container {
         background-color: #F25652;
-        max-width: 105px;
+        max-width: 90px;
         padding: 40px;
       }
       img {
