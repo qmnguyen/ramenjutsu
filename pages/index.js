@@ -53,6 +53,10 @@ const Index = () => (
         align-self: center;
         padding: 20px 60px 0px 100px;
       }
+      @media(max-width: 430px) {
+        .main-section { padding-left: 50px; }
+      }
+    )
     `}</style>
   </Layout>
 )
