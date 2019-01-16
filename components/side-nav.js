@@ -23,6 +23,11 @@ const SideNav = (props) => (
         max-width: 90px;
         padding: 40px;
       }
+      @media(max-width: 430px) {
+        .sidenav-container {
+          padding: 20px;
+        }
+      }
       img {
         margin-bottom: 50px;
         max-width: 50px;

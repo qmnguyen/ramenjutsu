@@ -21,6 +21,9 @@ const Unified = () => (
         align-self: stretch;
         padding: 80px 60px 80px 100px;
       }
+      @media(max-width: 430px) {
+        .exp-container { padding-left: 40px; }
+      }
       .tenure {
         color: #F25652;
         margin-top: 2px;
