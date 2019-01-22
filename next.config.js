@@ -4,8 +4,8 @@ module.exports = {
       '/': { page: '/' },
       '/financial-sciences': { page: '/financial-sciences' },
       '/unified': { page: '/unified' },
-      '/q': { page: '/q' },
-      '/q/main-base': { page: '/q/main-base' }
+      '/abv-rpg': { page: '/abv-rpg' },
+      '/abv-rpg/detail': { page: '/abv-rpg/detail' }
     }
   }
 }
