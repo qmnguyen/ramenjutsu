@@ -28,13 +28,23 @@ const Index = () => (
       />
       <Work
         company="Unified"
-        photo="/static/newsopinitiative-1a.png"
-        rotation="3"
+        photo="/static/smbg-q1-2016.png"
+        rotation="2"
       />
       <Work
         company="Unified"
         photo="/static/case-study-lp.gif"
         rotation="-2"
+      />
+      <Work
+        company="Unified"
+        photo="/static/infographic.png"
+        rotation="4"
+      />
+      <Work
+        company="Unified"
+        photo="/static/newsopinitiative-1a.png"
+        rotation="-5"
       />
     </div>
     <style jsx>{`
