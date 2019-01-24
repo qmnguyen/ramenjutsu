@@ -20,6 +20,7 @@ const SideNav = (props) => (
       .sidenav-container {
         background-color: #F25652;
         max-width: 90px;
+        overflowY: auto;
         padding: 40px;
       }
       @media(max-width: 430px) {

@@ -49,7 +49,6 @@ const Layout = (props) => (
     <style jsx>{`
       .container {
         display: flex;
-        height: 100%;
         min-height: 100%;
       }
     `}</style>

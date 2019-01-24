@@ -1,28 +1,20 @@
-import Link from "next/link"
-
 const Work = (props) => (
   <div>
-    <Link href={props.pageUrl}>
-      <a>
-        {props.company}
-        <img src={props.photo} alt={`${props.company} snapshot`} />
-      </a>
-    </Link>
+    <img src={props.photo} alt={`${props.company} snapshot`} />
     <style jsx>{`
       div {
-        margin-bottom: 60px;
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        max-width: 100%;
+        width: 280px;
       }
       img {
-        margin-top: 12px;
-        max-width: 100%;
-      }
-      a {
-        color: #F25652;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.09);
         display: block;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        position: relative;
-        text-decoration: none;
+        transform: rotateZ(${props.rotation}deg);
+        width: 100%;
       }
     `}</style>
   </div>
