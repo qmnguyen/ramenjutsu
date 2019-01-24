@@ -24,7 +24,7 @@ const Layout = (props) => (
       }
       body {
         background: #F1F0E2;
-        color: #555555;
+        color: #293E49;
         font-size: 20px;
         font-family: 'IBM Plex Mono', monospace;
         height: 100%;

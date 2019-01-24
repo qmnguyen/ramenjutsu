@@ -10,6 +10,7 @@ const Work = (props) => (
         width: 280px;
       }
       img {
+        border: 10px solid white;
         border-radius: 3px;
         box-shadow: 0 2px 6px rgba(0,0,0,0.09);
         display: block;
