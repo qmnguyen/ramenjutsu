@@ -34,6 +34,7 @@ const Layout = (props) => (
       }
       #__next {
         height: 100%;
+        width: 100%;
       }
       h1 { font-family: 'Raleway', sans-serif; }
       a {
@@ -49,6 +50,8 @@ const Layout = (props) => (
     `}</style>
     <style jsx>{`
       .container {
+        background: url(/static/bg-texture.png) 0 0 no-repeat;
+        background-size: cover;
         display: flex;
         min-height: 100%;
       }
