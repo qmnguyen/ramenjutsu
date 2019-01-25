@@ -23,7 +23,7 @@ const Layout = (props) => (
         width: 100%;
       }
       body {
-        background: #F1F0E2;
+        background: #DDBD85;
         color: #293E49;
         font-size: 20px;
         font-family: 'IBM Plex Mono', monospace;
@@ -35,6 +35,7 @@ const Layout = (props) => (
       #__next {
         height: 100%;
       }
+      h1 { font-family: 'Raleway', sans-serif; }
       a {
         color: #F25652;
         font-family: 'Raleway', sans-serif;

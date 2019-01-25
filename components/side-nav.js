@@ -18,7 +18,7 @@ const SideNav = (props) => (
     </div>
     <style jsx>{`
       .sidenav-container {
-        background-color: #F25652;
+        background-color: #293E49;
         max-width: 90px;
         overflowY: auto;
         padding: 40px;
@@ -33,13 +33,13 @@ const SideNav = (props) => (
         max-width: 50px;
       }
       a {
-        color: #F1F0E2;
+        color: #F25652;
         display: block;
         line-height: 1.2;
         margin-bottom: 15px;
       }
       .nav-section-title {
-        color: #444444;
+        color: #F1F0E2;
         font-weight: bold;
         letter-spacing: 2px;
         text-transform: uppercase;

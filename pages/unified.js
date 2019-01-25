@@ -17,8 +17,7 @@ const Unified = () => (
         margin-bottom: 10px;
       }
       .exp-container {
-        background-color: #F1F0E2;
-        align-self: flex-start;
+        align-self: stretch;
         overflow: auto;
         padding: 80px 60px 80px 100px;
       }
@@ -26,9 +25,12 @@ const Unified = () => (
         .exp-container { padding-left: 40px; }
       }
       .tenure {
-        color: #F25652;
+        color: #F1F0E2;
+        font-weight: bold;
+        letter-spacing: 1px;
         margin-top: 2px;
         margin-bottom: 40px;
+        text-transform: uppercase;
       }
       .blurb {
         line-height: 1.5;

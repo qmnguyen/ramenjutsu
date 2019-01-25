@@ -80,7 +80,6 @@ const Index = () => (
         max-width: 35em;
       }
       .main-section {
-        background-color: #F1F0E2;
         align-self: flex-start;
         overflow: auto;
         padding: 20px 60px 80px 100px;
