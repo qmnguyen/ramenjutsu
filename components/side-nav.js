@@ -15,6 +15,9 @@ const SideNav = (props) => (
         <a>Financial Sciences</a>
       </Link>
       <p className="nav-section-title">Play<span></span></p>
+      <Link href="/cuse-app">
+        <a>Cuse</a>
+      </Link>
     </div>
     <style jsx>{`
       .sidenav-container {

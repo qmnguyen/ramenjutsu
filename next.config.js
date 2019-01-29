@@ -7,6 +7,7 @@ module.exports = {
       '/': { page: '/' },
       '/financial-sciences': { page: '/financial-sciences' },
       '/unified': { page: '/unified' },
+      '/cuse-app': { page: '/cuse-app' },
       '/abv-rpg': { page: '/abv-rpg' },
       '/abv-rpg/detail': { page: '/abv-rpg/detail' }
     }

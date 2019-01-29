@@ -5,12 +5,12 @@ const Index = (props) => (
   <DashLayout>
     <h1>Welcome back, Q!</h1>
     <ul>
-      {props.beers.map(({beer}) => (
+      {/* {props.beers.map(({beer}) => (
         <li key={beer.bid}>
           <img src={beer.beer_label} alt={beer.beer_name} />
           <a>{beer.beer_name}</a>
         </li>
-      ))}
+      ))} */}
     </ul>
     <style jsx>{`
       ul {
@@ -28,13 +28,22 @@ const Index = (props) => (
   </DashLayout>
 )
 
-Index.getInitialProps = async function() {
-  const res = await fetch(`https://api.untappd.com/v4/user/checkins/quandangle?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`)
+Index.getInitialProps = async function(context) {
+  // const res = await fetch(`https://api.untappd.com/v4/user/checkins/quandangle?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`)
 
-  const data = await res.json()
+  //delete between
+  const { id } = context.query
+  const res = await fetch(`https://api.tvmaze.com/shows/${id}`)
+  const show = await res.json()
+  console.log(`here: ${show.name}`)
+  ////
+
+  // const data = await res.json()
 
   return {
-    beers: data.response.checkins.items
+    // beers: data.response.checkins.items
+
+    show
   }
 }
 
