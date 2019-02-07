@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const DashLayout = (props) => (
-  <div>
+  <div className="container">
     <Head>
       <title>ABV-RPG</title>
       <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
@@ -16,6 +16,23 @@ const DashLayout = (props) => (
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,400,400i,700" />
     </Head>
     {props.children}
+    <style jsx global>{`
+      body {
+        background: #f4f4f4;
+      }
+      h1 {
+        font-family: 'Raleway', sans-serif;
+      }
+      a {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 22px;
+        font-weight: 200;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 800px;
+      }
+    `}</style>
   </div>
 )
 

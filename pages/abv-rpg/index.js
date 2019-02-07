@@ -5,45 +5,53 @@ const Index = (props) => (
   <DashLayout>
     <h1>Welcome back, Q!</h1>
     <ul>
-      {/* {props.beers.map(({beer}) => (
+      {props.beers.map(({beer}) => (
         <li key={beer.bid}>
           <img src={beer.beer_label} alt={beer.beer_name} />
           <a>{beer.beer_name}</a>
         </li>
-      ))} */}
+      ))}
     </ul>
     <style jsx>{`
+      h1 {
+        margin: 40px auto;
+        text-align: center;
+      }
       ul {
         list-style-type: none;
         margin-left: 0;
         padding-left: 0;
       }
       li {
-        margin-bottom: 40px;
-        width: 300px;
+        background: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        display: inline-block;
+        height: 250px;
+        margin: 0 20px 40px 0px;
+        padding: 20px;
+        text-align: center;
+        vertical-align: top;
+        width: 250px;
       }
-      li img { max-width: 100%; }
-      li a { display: block; }
+      li img {
+        margin-bottom: 15px;
+        max-width: 150px;
+      }
+      li a {
+        display: block;
+      }
     `}</style>
   </DashLayout>
 )
 
 Index.getInitialProps = async function(context) {
-  // const res = await fetch(`https://api.untappd.com/v4/user/checkins/quandangle?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`)
+  const res = await fetch(`https://api.untappd.com/v4/user/checkins/quandangle?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`)
 
-  //delete between
-  const { id } = context.query
-  const res = await fetch(`https://api.tvmaze.com/shows/${id}`)
-  const show = await res.json()
-  console.log(`here: ${show.name}`)
-  ////
-
-  // const data = await res.json()
+  const data = await res.json()
 
   return {
-    // beers: data.response.checkins.items
-
-    show
+    beers: data.response.checkins.items
   }
 }
 
