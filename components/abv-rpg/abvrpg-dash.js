@@ -31,6 +31,7 @@ const DashLayout = (props) => (
       .container {
         margin: 0 auto;
         max-width: 800px;
+        text-align: center;
       }
     `}</style>
   </div>

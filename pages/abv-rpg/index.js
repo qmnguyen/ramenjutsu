@@ -34,6 +34,17 @@ const Index = (props) => (
         vertical-align: top;
         width: 250px;
       }
+      @media (max-width: 620px) {
+        li {
+          margin-right: 0;
+        }
+      }
+      li:nth-child(2n) {
+        margin-right: 0;
+      }
+      li:last-of-type {
+        margin-right: 0;
+      }
       li img {
         margin-bottom: 15px;
         max-width: 150px;
