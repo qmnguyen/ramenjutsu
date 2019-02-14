@@ -18,39 +18,34 @@ const Index = (props) => (
         text-align: center;
       }
       ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         list-style-type: none;
         margin-left: 0;
         padding-left: 0;
       }
       li {
+        align-content: center;
         background: #ffffff;
         border: 1px solid #dddddd;
         border-radius: 4px;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         height: 250px;
-        margin: 0 20px 40px 0px;
+        justify-content: center;
+        margin: 0 0 40px;
         padding: 20px;
         text-align: center;
-        vertical-align: top;
         width: 250px;
       }
-      @media (max-width: 620px) {
-        li {
-          margin-right: 0;
-        }
-      }
-      li:nth-child(2n) {
-        margin-right: 0;
-      }
-      li:last-of-type {
-        margin-right: 0;
-      }
       li img {
-        margin-bottom: 15px;
+        margin: 0 auto 15px;
         max-width: 150px;
       }
       li a {
         display: block;
+        line-height: 1.25;
       }
     `}</style>
   </DashLayout>
