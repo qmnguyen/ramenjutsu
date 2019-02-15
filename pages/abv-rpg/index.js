@@ -1,9 +1,15 @@
 import DashLayout from '../../components/abv-rpg/abvrpg-dash'
 import fetch from 'isomorphic-unfetch'
+import Link from 'next/link'
+
+const authlink = "https://untappd.com/oauth/authenticate/"
 
 const Index = (props) => (
   <DashLayout>
     <h1>Welcome back, Q!</h1>
+    <Link href={{ pathname: `${authlink}`, query: { client_id: `${process.env.CLIENT_ID}`, response_type: "code", redirect_url: "https://ramenjutsu.com/abvrpgcallback" } }}>
+      <a className="login-link">Login</a>
+    </Link>
     <ul>
       {props.beers.map(({beer}) => (
         <li key={beer.bid}>
@@ -14,8 +20,14 @@ const Index = (props) => (
     </ul>
     <style jsx>{`
       h1 {
-        margin: 40px auto;
+        margin: 40px auto 20px;
         text-align: center;
+      }
+      .login-link {
+        display: block;
+        margin-bottom: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
       }
       ul {
         display: flex;
