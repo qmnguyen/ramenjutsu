@@ -2,7 +2,6 @@ import DashLayout from '../../components/abv-rpg/abvrpg-dash'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 
-// need a callback to send GET request
 const Index = (props) => (
   <DashLayout>
     <h1>Welcome back, Q!</h1>
@@ -14,7 +13,7 @@ const Index = (props) => (
         redirect_url: "https://ramenjutsu.com/abvrpgcallback"
       }
     }}>
-      <a className="login-link">Login</a>
+      <a className="login-link" target="_blank">Login</a>
     </Link>
     <ul>
       {props.beers.map(({beer}) => (
