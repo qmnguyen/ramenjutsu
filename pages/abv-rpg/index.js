@@ -2,12 +2,21 @@ import DashLayout from '../../components/abv-rpg/abvrpg-dash'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 
-const authlink = "https://untappd.com/oauth/authenticate/"
+const redirectUrl = "https://ramenjutsu.com/abvrpgcallback"
 
+
+// need a callback to send GET request
 const Index = (props) => (
   <DashLayout>
     <h1>Welcome back, Q!</h1>
-    <Link href={{ pathname: `${authlink}`, query: { client_id: `${process.env.CLIENT_ID}`, response_type: "code", redirect_url: "https://ramenjutsu.com/abvrpgcallback" } }}>
+    <Link href={{
+      pathname: `${process.env.AUTH_URL}`,
+      query: {
+        client_id: `${process.env.CLIENT_ID}`,
+        response_type: "code",
+        redirect_url: `${redirectUrl}`
+      }
+    }}>
       <a className="login-link">Login</a>
     </Link>
     <ul>
@@ -24,7 +33,7 @@ const Index = (props) => (
         text-align: center;
       }
       .login-link {
-        display: block;
+        display: inline-block;
         margin-bottom: 40px;
         text-decoration: none;
         text-transform: uppercase;
@@ -64,7 +73,7 @@ const Index = (props) => (
 )
 
 Index.getInitialProps = async function(context) {
-  const res = await fetch(`https://api.untappd.com/v4/user/checkins/quandangle?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`)
+  const res = await fetch(`https://api.untappd.com/v4/user/checkins?access_token=${process.env.ACCESS_TOKEN}`)
 
   const data = await res.json()
 
