@@ -2,9 +2,6 @@ import DashLayout from '../../components/abv-rpg/abvrpg-dash'
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 
-const redirectUrl = "https://ramenjutsu.com/abvrpgcallback"
-
-
 // need a callback to send GET request
 const Index = (props) => (
   <DashLayout>
@@ -14,7 +11,7 @@ const Index = (props) => (
       query: {
         client_id: `${process.env.CLIENT_ID}`,
         response_type: "code",
-        redirect_url: `${redirectUrl}`
+        redirect_url: "https://ramenjutsu.com/abvrpgcallback"
       }
     }}>
       <a className="login-link">Login</a>
