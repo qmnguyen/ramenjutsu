@@ -1,3 +1,6 @@
+import DashLayout from '../components/abv-rpg/abvrpg-dash'
+import fetch from 'isomorphic-unfetch'
+
 const ABVRPGCallback = (props) => (
   <ul>
     {props.beers.map(({beer}) => (

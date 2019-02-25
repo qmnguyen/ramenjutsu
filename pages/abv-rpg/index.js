@@ -1,5 +1,4 @@
 import DashLayout from '../../components/abv-rpg/abvrpg-dash'
-import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 
 const Index = (props) => (
