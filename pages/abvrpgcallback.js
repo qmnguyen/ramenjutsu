@@ -2,13 +2,15 @@ import DashLayout from '../components/abv-rpg/abvrpg-dash'
 import fetch from 'isomorphic-unfetch'
 
 const ABVRPGCallback = (props) => (
-  <ul>
-    {props.beers.map(({beer}) => (
-      <li key={beer.bid}>
-        <img src={beer.beer_label} alt={beer.beer_name} />
-        <a>{beer.beer_name}</a>
-      </li>
-    ))}
+  <DashLayout>
+    <ul>
+      {props.beers.map(({beer}) => (
+        <li key={beer.bid}>
+          <img src={beer.beer_label} alt={beer.beer_name} />
+          <a>{beer.beer_name}</a>
+        </li>
+      ))}
+    </ul>
     <style jsx>{`
       ul {
         display: flex;
@@ -41,7 +43,7 @@ const ABVRPGCallback = (props) => (
         line-height: 1.25;
       }
     `}</style>
-  </ul>
+  </DashLayout>
 )
 
 // props.url.asPath contains the code sent back from Untappd API
