@@ -11,46 +11,6 @@ const Index = () => (
       of a<br/>
       designer</h1>
       <p className="intro">This is a place anchored in the internet for me to show some stuff; these are things I had a chance to be involved with, as well as some experimental stuff I had a chance to dream up. For other things, go check out my <a href="https://dribbble.com/ramenjutsu">Dribbble</a> or we can chat on <a href="https://twitter.com/ramenjutsu">Twitter</a>.</p>
-      <Work
-        company="Unified"
-        photo="/static/adscore.gif"
-        rotation="2"
-      />
-      <Work
-        company="Unified"
-        photo="/static/Dark_social_packet_LP.png"
-        rotation="-7"
-      />
-      <Work
-        company="Unified"
-        photo="/static/section-2.png"
-        rotation="3"
-      />
-      <Work
-        company="Unified"
-        photo="/static/mapthegraph-tshirt-black.png"
-        rotation="-4"
-      />
-      <Work
-        company="Unified"
-        photo="/static/smbg-q1-2016.png"
-        rotation="2"
-      />
-      <Work
-        company="Unified"
-        photo="/static/case-study-lp.gif"
-        rotation="-2"
-      />
-      <Work
-        company="Unified"
-        photo="/static/infographic.png"
-        rotation="4"
-      />
-      <Work
-        company="Unified"
-        photo="/static/newsopinitiative-1a.png"
-        rotation="-5"
-      />
     </div>
     <style jsx>{`
       h1 {
