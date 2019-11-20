@@ -12,7 +12,7 @@ const SideNav = (props) => (
         <a>Unified</a>
       </Link>
       <Link href="/financial-sciences">
-        <a>Financial Sciences</a>
+        <a className="block">Financial Sciences</a>
       </Link>
       <p className="nav-section-title">Play<span></span></p>
       <Link href="/cuse-app">
@@ -26,14 +26,36 @@ const SideNav = (props) => (
         overflowY: auto;
         padding: 40px;
       }
-      @media(max-width: 430px) {
+      @media(max-width: 495px) {
         .sidenav-container {
-          padding: 20px;
+          flex: none;
+          max-width: 100%;
+          overflow: auto;
+        }
+        .nav-items > * {
+          display: inline-block;
+        }
+        .nav-items > p:last-of-type,
+        .nav-items > :last-child {
+          margin: 0;
+        }
+        .nav-items .block:before {
+          content: "";
+          background-color: #F1F0E2;
+          display: inline-block;
+          height: 15px;
+          margin: 0 8px;
+          width: 3px;
         }
       }
       img {
         margin-bottom: 50px;
         max-width: 50px;
+      }
+      @media(max-width: 495px) {
+        img {
+          margin-bottom: 0;
+        }
       }
       a {
         color: #F25652;

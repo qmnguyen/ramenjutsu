@@ -55,6 +55,12 @@ const Layout = (props) => (
         display: flex;
         min-height: 100%;
       }
+      @media(max-width: 495px) {
+        .container {
+          display: block;
+          flex: none;
+        }
+      }
     `}</style>
   </div>
 )
