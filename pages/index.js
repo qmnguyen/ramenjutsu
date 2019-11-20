@@ -44,7 +44,7 @@ const Index = () => (
         overflow: auto;
         padding: 20px 60px 80px 100px;
       }
-      @media(max-width: 495px) {
+      @media(max-width: 748px) {
         .main-section { padding-left: 40px; }
       }
       @media(max-height: 736px) {

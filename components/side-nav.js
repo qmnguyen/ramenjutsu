@@ -14,6 +14,7 @@ const SideNav = (props) => (
       <Link href="/financial-sciences">
         <a className="block">Financial Sciences</a>
       </Link>
+      <span className="break-block"></span>
       <p className="nav-section-title">Play<span></span></p>
       <Link href="/cuse-app">
         <a>Cuse</a>
@@ -26,7 +27,7 @@ const SideNav = (props) => (
         overflowY: auto;
         padding: 40px;
       }
-      @media(max-width: 495px) {
+      @media(max-width: 595px) {
         .sidenav-container {
           flex: none;
           max-width: 100%;
@@ -52,7 +53,7 @@ const SideNav = (props) => (
         margin-bottom: 50px;
         max-width: 50px;
       }
-      @media(max-width: 495px) {
+      @media(max-width: 595px) {
         img {
           margin-bottom: 0;
         }
@@ -75,6 +76,14 @@ const SideNav = (props) => (
         height: 4px;
         margin-left: 3px;
         width: 4px;
+      }
+      .break-block {
+        display: none;
+      }
+      @media(max-width: 595px) {
+        .break-block {
+          display: block !important;
+        }
       }
     `}</style>
   </nav>

@@ -55,7 +55,7 @@ const Layout = (props) => (
         display: flex;
         min-height: 100%;
       }
-      @media(max-width: 495px) {
+      @media(max-width: 595px) {
         .container {
           display: block;
           flex: none;
