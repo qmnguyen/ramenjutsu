@@ -46,7 +46,7 @@ const Unified = () => (
         />
       </div>
       <div className="work-type">
-        <h2>Website</h2>
+        <h2>Website/Branding</h2>
         <Work
           company="Unified"
           photo="/static/adscore.gif"
@@ -63,6 +63,11 @@ const Unified = () => (
           newwidth="550"
           photo="/static/adscore-flow.png"
           rotation="4"
+        />
+        <Work
+          company="Unified"
+          photo="/static/health-check-logo-01.png"
+          rotation="-2"
         />
         <Work
           company="Unified"
