@@ -13,8 +13,19 @@ const Unified = () => (
         <h2>Application</h2>
         <Work
           company="Unified"
+          newwidth="600"
+          photo="/static/template-builder.png"
+          rotation="-1"
+        />
+        <Work
+          company="Unified"
           photo="/static/section-2.png"
           rotation="3"
+        />
+        <Work
+          company="Unified"
+          photo="/static/create-report.png"
+          rotation="-1"
         />
         <Work
           company="Unified"
@@ -49,7 +60,7 @@ const Unified = () => (
         />
         <Work
           company="Unified"
-          newwidth="700"
+          newwidth="550"
           photo="/static/adscore-flow.png"
           rotation="4"
         />
