@@ -7,7 +7,9 @@ const Work = (props) => (
         margin-bottom: 0px;
         margin-right: 0px;
         max-width: 100%;
+        vertical-align: middle;
         width: 280px;
+        width: ${props.newwidth}px;
       }
       img {
         border: 10px solid white;
