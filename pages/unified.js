@@ -15,7 +15,7 @@ const Unified = () => (
           company="Unified"
           newwidth="600"
           photo="/static/template-builder.png"
-          rotation="-1"
+          rotation="6"
         />
         <Work
           company="Unified"
@@ -25,7 +25,7 @@ const Unified = () => (
         <Work
           company="Unified"
           photo="/static/create-report.png"
-          rotation="-1"
+          rotation="-12"
         />
         <Work
           company="Unified"
@@ -66,14 +66,14 @@ const Unified = () => (
         />
         <Work
           company="Unified"
-          newwidth="390"
-          photo="/static/adscore-error.png"
-          rotation="9"
+          photo="/static/Dark_social_packet_LP.png"
+          rotation="-7"
         />
         <Work
           company="Unified"
-          photo="/static/Dark_social_packet_LP.png"
-          rotation="-7"
+          newwidth="390"
+          photo="/static/adscore-error.png"
+          rotation="9"
         />
         <Work
           company="Unified"
