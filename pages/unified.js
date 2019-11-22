@@ -13,7 +13,12 @@ const Unified = () => (
         <h2>Application</h2>
         <Work
           company="Unified"
-          newwidth="600"
+          photo="/static/create-report.png"
+          rotation="-12"
+        />
+        <Work
+          company="Unified"
+          newwidth="525"
           photo="/static/template-builder.png"
           rotation="6"
         />
@@ -24,25 +29,32 @@ const Unified = () => (
         />
         <Work
           company="Unified"
-          photo="/static/create-report.png"
-          rotation="-12"
+          newwidth="850"
+          photo="/static/data-config-dialog.png"
+          rotation="-1"
         />
         <Work
           company="Unified"
-          newwidth="600"
-          photo="/static/data-config-dialog.png"
-          rotation="-1"
+          newwidth="200"
+          photo="/static/SOP-mobile-1.png"
+          rotation="-3"
+        />
+        <Work
+          company="Unified"
+          newwidth="200"
+          photo="/static/SOP-mobile-2.png"
+          rotation="6"
+        />
+        <Work
+          company="Unified"
+          photo="/static/newsopinitiative-1a.png"
+          rotation="-5"
         />
         <Work
           company="Unified"
           newwidth="600"
           photo="/static/data-config-bulk-date.png"
           rotation="1"
-        />
-        <Work
-          company="Unified"
-          photo="/static/newsopinitiative-1a.png"
-          rotation="-5"
         />
       </div>
       <div className="work-type">
@@ -76,9 +88,20 @@ const Unified = () => (
         />
         <Work
           company="Unified"
+          photo="/static/savings-calculator.png"
+          rotation="-5"
+        />
+        <Work
+          company="Unified"
           newwidth="390"
           photo="/static/adscore-error.png"
           rotation="9"
+        />
+        <Work
+          company="Unified"
+          newwidth="390"
+          photo="/static/cannes-billboard-animation.gif"
+          rotation="3"
         />
         <Work
           company="Unified"
@@ -102,6 +125,11 @@ const Unified = () => (
           company="Unified"
           photo="/static/infographic.png"
           rotation="4"
+        />
+        <Work
+          company="Unified"
+          photo="/static/baoli-club-party_invite-03.png"
+          rotation="2"
         />
       </div>
     </div>
