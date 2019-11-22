@@ -110,7 +110,13 @@ const Unified = () => (
         />
       </div>
       <div className="work-type">
-        <h2>Print</h2>
+        <h2>Email/Print/Social</h2>
+        <Work
+          company="Unified"
+          newwidth="400"
+          photo="/static/health_check-social_post-midnight-06.jpg"
+          rotation="-9"
+        />
         <Work
           company="Unified"
           photo="/static/mapthegraph-tshirt-black.png"
@@ -128,6 +134,7 @@ const Unified = () => (
         />
         <Work
           company="Unified"
+          newwidth="180"
           photo="/static/baoli-club-party_invite-03.png"
           rotation="2"
         />
