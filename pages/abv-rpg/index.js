@@ -9,7 +9,7 @@ const Index = (props) => (
       query: {
         client_id: `${process.env.CLIENT_ID}`,
         response_type: "code",
-        redirect_url: "https://ramenjutsu.com/abvrpgcallback"
+        redirect_url: "https://abvrpg.ramenjutsu.com/abvrpgcallback"
       }
     }}>
       <a className="login-link" target="_blank">Login</a>
