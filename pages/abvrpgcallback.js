@@ -3,6 +3,7 @@ import fetch from 'isomorphic-unfetch'
 
 const ABVRPGCallback = (props) => (
   <DashLayout>
+    <p>the code: ${props.url.asPath}</p>
     <ul>
       {props.beers.map(({beer}) => (
         <li key={beer.bid}>
@@ -50,7 +51,7 @@ const ABVRPGCallback = (props) => (
 // redirecturl/?code=CODE
 
 ABVRPGCallback.getInitialProps = async function(context) {
-  const res = await fetch(`https://api.untappd.com/v4/user/checkins?access_token=${process.env.ACCESS_TOKEN}`)
+  const res = await fetch(`https://api.untappd.com/v4/user/checkins?access_token=${props.url.asPath}`)
 
   const data = await res.json()
 
