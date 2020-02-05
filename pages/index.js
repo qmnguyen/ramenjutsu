@@ -3,12 +3,12 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 const Index = (props) => {
-  const authBaseUrl = process.env.AUTH_BASE_URL;
+  const loginUrl = process.env.AUTH_BASE_URL + `?client_id=` + process.env.CLIENT_ID + `&response_type=code&redirect_url=` + process.env.REDIRECT_URL;
 
   return (
     <Layout>
       <br />
-      <a href={authBaseUrl} >Login with your Untappd account</a>
+      <a href={loginUrl} >Login with your Untappd account</a>
     </Layout>
   )
 }
