@@ -1,8 +1,17 @@
 import "./NavBar.scss";
 
-const NavBar = () => (
+import NavButton from "./NavButton";
+
+const NavBar = (props) => (
   <div className="NavBar">
-    NAVBAR
+    {props.navButtons.map(button => (
+      <NavButton
+        key={button.path}
+        path={button.path}
+        label={button.label}
+        icon={button.icon}
+      />
+    ))}
   </div>
 );
 

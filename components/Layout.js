@@ -6,6 +6,8 @@ import NavBar from "./NavBar";
 import "./Layout.scss";
 import "./main.scss";
 
+import navButtons from "../config/buttons";
+
 const Layout = (props) => {
   const appTitle = `> ABV RPG`;
 
@@ -21,7 +23,7 @@ const Layout = (props) => {
       <div className="Content">
         {props.children}
       </div>
-      <NavBar />
+      <NavBar navButtons={navButtons} />
     </div>
   )
 };

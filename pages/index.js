@@ -1,8 +1,13 @@
+import Link from "next/link";
+
 import Layout from "../components/Layout";
 
 const Index = () => (
   <Layout>
-    Welcome to ABV RPG!
+    <br />
+    <Link href="/explore">
+      <a>Welcome to ABV RPG!</a>
+    </Link>
   </Layout>
 );
 
