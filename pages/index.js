@@ -8,7 +8,7 @@ const Index = (props) => {
   return (
     <Layout>
       <br />
-      <Link href={authBaseUrl}>
+      <Link href={authBaseUrl} as={authBaseUrl}>
         <a>Login with your Untappd account</a>
       </Link>
     </Layout>
