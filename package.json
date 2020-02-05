@@ -3,22 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^7.0.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "serve": "^10.1.2"
-  },
-  "devDependencies": {},
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "export": "next export",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -30,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/qmnguyen/ramenjutsu/issues"
   },
-  "homepage": "https://github.com/qmnguyen/ramenjutsu#readme"
+  "homepage": "https://github.com/qmnguyen/ramenjutsu#readme",
+  "dependencies": {
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }
