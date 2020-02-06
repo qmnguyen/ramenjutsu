@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import fetch from "isomorphic-unfetch";
 
 const DashboardView = (props) => (
   <Layout>
