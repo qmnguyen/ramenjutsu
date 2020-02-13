@@ -5,6 +5,7 @@ const codeQuery = [];
 const customAccessToken = [];
 
 const GetAccessToken = (props) => {
+  console.log(props.accessToken);
   return (
     <h1>hello world: {props.accessToken}</h1>
   )
