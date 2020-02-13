@@ -1,4 +1,5 @@
 import { withRouter } from "next/router";
+import fetch from "isomorphic-unfetch";
 
 const codeQuery = [];
 const customAccessToken = [];
