@@ -1,4 +1,7 @@
 import Layout from "../components/Layout";
+import StatBlock from "../components/StatBlock";
+import GetAccessToken from "./abvrpgcallback";
+
 import fetch from "isomorphic-unfetch";
 
 const DashboardView = (props) => (
@@ -6,52 +9,17 @@ const DashboardView = (props) => (
     <div>
       <p>Hi User!</p>
       <p>Your avatar here</p>
-      <div className="stat-block">
-        <ul>
-          {props.beers.map(({beer}) => (
-            <li key={beer.bid}>
-              <img src={beer.beer_label} alt={beer.beer_name} />
-              <a>{beer.beer_name}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <StatBlock beerlist={props.beers} />
       <div className="upgrade-block">
-        <div>Check-in</div>
+        <div>
+          <span>The token:</span>
+          <GetAccessToken />
+        </div>
+        <style jsx>{`
+          padding-top: 20px;
+          padding-bottom: 100px;
+        `}</style>
       </div>
-      <style jsx>{`
-        ul {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          list-style-type: none;
-          margin-left: 0;
-          padding-left: 0;
-        }
-        li {
-          align-content: center;
-          background: #ffffff;
-          border: 1px solid #dddddd;
-          border-radius: 4px;
-          display: flex;
-          flex-direction: column;
-          height: 250px;
-          justify-content: center;
-          margin: 0 0 40px;
-          padding: 20px;
-          text-align: center;
-          width: 250px;
-        }
-        li img {
-          margin: 0 auto 15px;
-          max-width: 150px;
-        }
-        li a {
-          color: black;
-          display: block;
-          line-height: 1.25;
-        }
-      `}</style>
     </div>
   </Layout>
 );
