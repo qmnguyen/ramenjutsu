@@ -6,7 +6,7 @@ const customAccessToken = [];
 
 const GetAccessToken = (props) => {
   return (
-    <h1>hello world</h1>
+    <h1>hello world: {props.accessToken}</h1>
   )
 }
 
