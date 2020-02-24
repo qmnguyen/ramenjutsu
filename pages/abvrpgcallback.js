@@ -16,10 +16,10 @@ GetAccessToken.getInitialProps = async (cxt) => {
 
   // const data = await res.json();
 
-  return {
-    accessToken: res.response.access_token,
-    specialCode: cxt.query.code
-  }
+  return (
+    {accessToken: res.access_token},
+    {specialCode: cxt.query.code}
+  )
 }
 
 export default withRouter(GetAccessToken);
