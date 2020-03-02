@@ -11,7 +11,7 @@ function App() {
         <div className="Experience-select-region">
           <a
           className="Experience-link"
-          href="/"
+          href="https://thelastdown.ramenjutsu.com"
           target="_blank"
           rel="noopener noreferrer"
           >
@@ -22,7 +22,7 @@ function App() {
         <div className="Experience-select-region">
           <a
           className="Experience-link"
-          href="/"
+          href="https://abvrpg.ramenjutsu.com"
           target="_blank"
           rel="noopener noreferrer"
           >
