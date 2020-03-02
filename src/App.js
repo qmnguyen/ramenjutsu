@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+    <div className="Experience">
+      <header className="Experience-header">
+        <h1>Choose Your Experience</h1>
+      </header>
+      <div className="Experience-select-wrapper">
+        <div className="Experience-select-region">
+          <a
+          className="Experience-link"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          >
+            <h3>The Last Down</h3>
+            <p>When just watching football isn't enough. The Last Down will keep you engaged in the game all the way through the last down!</p>
+          </a>
+        </div>
+        <div className="Experience-select-region">
+          <a
+          className="Experience-link"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+            <h3>ABV RPG</h3>
+            <p>Grow your Hop when you're drinking your favorite hops!</p>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
